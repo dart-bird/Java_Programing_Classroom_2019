@@ -7,6 +7,7 @@ public class Course {
 	// 교과목의 이름을 주어진 값으로 초기화하면서 Course 객체를 생성한다.
 	public Course(String courseName) {
 		// 여기에 코드를 입력하세요
+		this.courseName = courseName;
 	}
 	// 교과목의 이름을 반환한다
 	public String getCourseName() {
@@ -16,27 +17,29 @@ public class Course {
 	// 교과목의 출석 점수를 반환한다
 	public int getattendScore() {
 		// 여기에 코드를 입력하세요
-		return ;
+		return attendScore;
 	}
 	
 	// 교과목의 학점인  I를 반환한다
 	public String getGrade() {
 		// 여기에 코드를 입력하세요
-		return ;
+		return I;
 	}
 
 	// 교과목의 이름과 출석 점수를 반환한다
 	public String toString(){
 		// 여기에 코드를 입력하세요
-		return ;
+		return ("교과목 이름: " + courseName + ", " + "출석점수: " +  attendScore);
 	}
 	// 교과목의 이름을 변경한다
 	public void setCourseName(String newCourseName) {
 		// 여기에 코드를 입력하세요
+		courseName = newCourseName;
 	}
 	// 교과목의 출석 점수를 변경한다
-	public void setattendScore() {
+	public void setattendScore(int newAttendScore) {
 		// 여기에 코드를 입력하세요
+		attendScore = newAttendScore;
 	}
 
 }

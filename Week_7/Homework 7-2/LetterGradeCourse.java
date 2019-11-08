@@ -5,24 +5,29 @@ public class LetterGradeCourse extends Course {
 	// 문자 학점 교과목의 변수들 값을 주어진 값들로 초기화한다
 	public LetterGradeCourse(String cname) {
 		// 여기 에 코드를 입력하세요
-
+		super();
+		courseName = cname;
+		attendScore = 0;
+		assignScore = 0;
+		examScore = 0;
 	}
 
 	// 교과목의 과제 점수를 반환한다
 	public int getAssignScore() {
 		// 여기에 코드를 입력하세요
-		return ;
+		return assignScore;
 	}
 	
 	// 교과목의 시험 점수를 반환한다
 	public int getExamScore() {
 		// 여기에 코드를 입력하세요
-		return ;
+		return examScore;
 	}
 	
 	//교과목의 총점을 계산하여 반환한다
 	public double getTotal() {
 		// 여기에 코드를 입력하세요
+		
 		return ;
 	}
 	// 교과목의 학점을 반환한다
