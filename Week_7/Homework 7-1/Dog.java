@@ -8,6 +8,10 @@ public class Dog extends Pet{
 	public Dog()
 	{
 	// 여기에 코드를 입력하세요
+		String name = "";
+		int age = 0;
+		String bread = "";
+		boolean boostreShot = false;
 	}
 	
 	// 개의 이름, 나이, 품종을 각각 주어진 값으로 초기화하고
@@ -15,33 +19,39 @@ public class Dog extends Pet{
 	public Dog(String name, int age, String breed)
 	{
 	// 여기에 코드를 입력하세요
+		super(name, age);
+		this.name = name;
+		this.age = age;
+		this.breed = breed;
 	}
 	
 	// 개의 모든 데이터를 알려 준다
 	public String toString() {
 	// 여기에 코드를 입력하세요
-		return;
+		return ("이름: " + name + ", 나이: " + age + ", 품종: " + breed + ", 접종여부: " + boostreShot);
 	}
 
 	// 개의 품종을 변경한다
 	public void setBreed(String newBreed){
 	// 여기에 코드를 입력하서세요
+		breed = newBreed;
 	}
 	
 	// 개의 예방주사 접종여부를 변경한다
 	public void setboostreShot() {
 		//여기에 코드를 입력하세요
+		this.boostreShot = true;
 	}
 
 	// 개의 품종을 알려준다
 	public String getGreed() {
 		//여기에 코드를 입력하세요
-		return ;
+		return breed;
 	}
 	
 	// 개의 예방주사 접종 여부를 알려준다
 	public boolean getboostreShot() {
 		// 여기에 메소드를 입력하세요
-		return ;
+		return boostreShot;
 	}
 }
