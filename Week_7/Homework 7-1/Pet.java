@@ -7,8 +7,8 @@ public class Pet {
 	// 나이 기본값: 빈 문자열, 나이 기본값: 0
 	public Pet() {
 		// 여기에 코드를 입력하세요
-		String name = "";
-		int age = 0;
+		name = "";
+		age = 0;
 	}
 
 	// 애완동물의 이름과 나이를 각각 주어진 값으로 초기화하면서

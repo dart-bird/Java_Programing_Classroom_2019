@@ -8,10 +8,10 @@ public class Dog extends Pet{
 	public Dog()
 	{
 	// 여기에 코드를 입력하세요
-		String name = "";
-		int age = 0;
-		String bread = "";
-		boolean boostreShot = false;
+		name = "";
+		age = 0;
+		breed = "";
+		boostreShot = false;
 	}
 	
 	// 개의 이름, 나이, 품종을 각각 주어진 값으로 초기화하고
