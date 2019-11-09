@@ -16,7 +16,7 @@ class Main {
           //교과목 이름: Data structur, 출석점수: 95, 과제 점수: 98, 시험 점수:83
   
           System.out.println(courseOne.getGrade());
-        //A
+        //B
         
           courseTwo = new PassFailCourse("Culture Seminar");
           System.out.println(courseTwo.toString());
