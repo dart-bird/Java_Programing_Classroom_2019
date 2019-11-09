@@ -1,6 +1,6 @@
 public class Student {
-	protected String name; // 이름
-	protected int number; // 학번
+	private String name; // 이름
+	private int number; // 학번
 	//이름을 기본 값으로 초기화하면서 Student 객체를 생성한다
 	public Student() {
 	//여기에 코드를 입력하세요
@@ -10,8 +10,8 @@ public class Student {
 	//이름을 매개번수 값으로 초기화하면서 Student 객체를 생성한다
 	public Student(String Name, int Number) {
 	//여기에 코드를 입력하세요
-		name = Name;
-		number = Number;
+		setName(Name);	
+		setNumber(Number);
 	}
 
 	// 이름을 반환한다

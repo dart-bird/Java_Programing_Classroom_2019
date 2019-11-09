@@ -6,12 +6,11 @@ public class Graduate extends Student{
 	// 각각 주어진 값으로 초기화 하면서 객체를 생성
 	public Graduate(String Name, int Number,String Tatype,double ScholarshipRate) {
 	//여기에 코드를 입력하세요
-		super(Name, Number);
-		this.name = Name;
-		this.number = Number;
-		tatype = Tatype;
-		scholarshipRate = ScholarshipRate;
-
+		//super(Name, Number);
+		setName(Name);
+		setNumber(Number);
+		setTatype(Tatype);
+		setScholarshipRate(ScholarshipRate);
 	}
 	//조교 유형 변경
 	public void setTatype(String newTatype) {
@@ -22,6 +21,7 @@ public class Graduate extends Student{
 	public void setScholarshipRate(double newScholarshipRate) {
 	//여기에 코드를 입력하세요
 		scholarshipRate = newScholarshipRate;
+		System.out.println(getScholarshipRate());
 	}
 		// 조교 유형을 반환한다
 	public String getTatype() {
@@ -39,6 +39,7 @@ public class Graduate extends Student{
 		// 대학원생의 모든 데이터를 반환한다.
 	public String toString() {
 	//여기에 코드를 입력하세요
-		return ("이름: " +name+ ",학번: " +number+ ", 조교 유형: " +tatype+ ", 장학금 비율: " + scholarshipRate);
+		System.out.println(scholarshipRate);
+		return ("이름: " +getName()+ ",학번: " +getNumber()+ ", 조교 유형: " +getTatype()+ ", 장학금 비율: " + getScholarshipRate());
 	}
 }
