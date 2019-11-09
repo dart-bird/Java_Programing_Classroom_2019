@@ -8,26 +8,30 @@ public class Employee {
 	// 새로운 Employee 객체를 생성한다.
 	public Employee(String Name, String Department){
 		//여기에 코드를 입력하세요
+		name = Name;
+		department = Department;
 	}
 	
 	// 이름을 반환한다
 	public String getName() {
 		//여기에 코드를 입력하세요
-		return ;
+		return name;
 	}
 	// 소속부서를 반환한다
 	public String getDepartment() {
 		//여기에 코드를 입력하세요
-		return ;
+		return department;
 	}
 	// 이름을 변경한다
 	public void setName(String Name) {
 		//여기에 코드를 입력하세요
+		name = Name;
 	}
 	
 	// 소속부서를 변경한다
 	public void setDepartment(String newDepartment) {
 		//여기에 코드를 입력하세요
+		department = newDepartment;
 	}
 	
 }

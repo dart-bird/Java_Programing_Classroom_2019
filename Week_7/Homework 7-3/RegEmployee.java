@@ -7,17 +7,22 @@ public class RegEmployee extends Employee{
 	// 각각 주어진 값으로 초기화하면서 RegEmployee 객체를 생성한다
 	public RegEmployee (String name, String department, double yearlySalary, double bonusRate) {
 			// 여기에 코드를 입력하세요
+			super(name, department);
+			this.name = name;
+			this.department = department;
+			this.yearlySalary = yearlySalary;
+			this.bonusRate = bonusRate;
 	}
 	// 정규직 직원의 월급을 계산한다
 	public double pay(){
 	// 여기에 코드를 입력하세요
-		return;
+		return ( ( yearlySalary / 12 ) * ( 1 + bonusRate ) );
 	}
 	
 	// 정규직 직원의 모든 데이터를 반환한다
 	public String toString() {
 		// 여기에 코드를 입력하세요
-		return;
+		return ("직원의 이름: " +name+ ", 소속 부서: " +department+ ", 연봉:" +yearlySalary+ ", 보너스 지급률: " +bonusRate);
 	}
 	
 }
