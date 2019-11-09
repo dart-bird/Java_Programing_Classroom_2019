@@ -8,8 +8,8 @@ public class Employee {
 	// 새로운 Employee 객체를 생성한다.
 	public Employee(String Name, String Department){
 		//여기에 코드를 입력하세요
-		name = Name;
-		department = Department;
+		setName(Name);
+		setDepartment(Department);
 	}
 	
 	// 이름을 반환한다
