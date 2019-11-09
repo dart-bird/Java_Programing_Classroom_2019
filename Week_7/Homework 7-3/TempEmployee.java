@@ -18,7 +18,9 @@ public class TempEmployee extends Employee{
 	// 계약직 직원의 월급을 계산한다
 	public double pay(){
 		//여기에 코드를 입력하세요
-		return payRate * hoursWorked;
+		double tmp_hoursWorked = hoursWorked;
+		hoursWorked = 0;
+		return payRate * tmp_hoursWorked;
 	}
 	// 계약직 직원의 추가 근무시간을 누적된 근무시간에 더한다
 	public void addHours (int moreHours){
