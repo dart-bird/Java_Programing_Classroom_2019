@@ -7,7 +7,7 @@ class Main {
         student1.setScholarshipRate(0.5);
           student1.setTatype("research");
           System.out.println(student1.toString());
-          Graduate student2 = new Graduate("투길동",2010123456,"education",1);
+          Graduate student2 = new Graduate("홍길동",2010123456,"education",1);
           //이름: 홍길동,학번: 2010123456, 조교 유형: research, 장학금 비율: 0.5
           
           System.out.println(student2.equals(student1));
