@@ -23,7 +23,7 @@ public class Course {
 	// 교과목의 학점인  I를 반환한다
 	public String getGrade() {
 		// 여기에 코드를 입력하세요
-		return I;
+		return "I";
 	}
 
 	// 교과목의 이름과 출석 점수를 반환한다
