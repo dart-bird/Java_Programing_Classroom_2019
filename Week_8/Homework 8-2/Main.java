@@ -1,7 +1,7 @@
 abstract class Converter {
-    abstract protected double convert(double src); // 추상 메소드
-    abstract protected String getSrcString(); // 추상 메소드
-    abstract protected String getDestString(); // 추상 메소드
+    protected abstract double convert(double src); // 추상 메소드
+    protected abstract String getSrcString(); // 추상 메소드
+    protected abstract String getDestString(); // 추상 메소드
     protected double ratio; // 비율
     public double run(double val) {
        System.out.println("convert " + val + " " + getSrcString()+" to "+getDestString());
@@ -13,10 +13,47 @@ abstract class Converter {
  
  class Won2Dollar extends Converter {
     // fill here!
+    public Won2Dollar(double Inratio){
+      this.ratio = Inratio;
+    }
+    @Override
+    protected double convert(double src) {
+       // TODO Auto-generated method stub
+       return (double)(src/ratio);
+    }
+    @Override
+    protected String getSrcString() {
+       // TODO Auto-generated method stub
+       return "won";
+    }
+    @Override
+    protected String getDestString() {
+       // TODO Auto-generated method stub
+       return "dollar";
+    }
+    
  }
  
  class Km2Mile extends Converter {
     // fill here!
+    public Km2Mile(double Inratio){
+       this.ratio = Inratio;
+    }
+    @Override
+    protected double convert(double src) {
+       // TODO Auto-generated method stub
+       return (double)(src/ratio);
+    }
+    @Override
+    protected String getSrcString() {
+       // TODO Auto-generated method stub
+       return "km";
+    }
+    @Override
+    protected String getDestString() {
+       // TODO Auto-generated method stub
+       return "mile";
+    }
  }
  
  class Main {
