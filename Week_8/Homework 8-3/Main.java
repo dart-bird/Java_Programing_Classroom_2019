@@ -11,18 +11,39 @@ interface MyArray {
     private String[] arr;
     public StringArray(int num) {
        // fill here!
+       this.num = num;
+       arr = new String[num];
     }
     public int length() {
        // fill here!
+       return num;
     }
     public int capacity() {
        // fill here!
+       return max_num;
     }
     public String get_remove(int index) {
        // fill here!
+       String tmp = arr[index];
+       arr[index] = null;
+       do{
+          if(arr[index]!=null){
+             arr[index-1] = arr[index];
+          }
+          index++;
+       }while(arr[index]!=null);
+       num--;
+       max_num++;
+       return tmp;
     }
     public boolean set(String val, int index) {
        // fill here!
+       if(arr[index] == null) return false;
+       else {
+          num++;
+          max_num--;
+          return true;
+      }
     }
  }
  
