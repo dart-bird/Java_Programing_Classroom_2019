@@ -11,7 +11,8 @@ interface MyArray {
     private String[] arr;
     public StringArray(int num) {
        // fill here!
-       this.num = num;
+       this.num = 0;
+       max_num = num;
        arr = new String[num];
     }
     public int length() {
@@ -27,22 +28,20 @@ interface MyArray {
        String tmp = arr[index];
        arr[index] = null;
        do{
-          if(arr[index]!=null){
-             arr[index-1] = arr[index];
-          }
+          arr[index] = arr[index +1];
           index++;
        }while(arr[index]!=null);
        num--;
-       max_num++;
        return tmp;
     }
     public boolean set(String val, int index) {
        // fill here!
-       if(arr[index] == null) return false;
-       else {
-          num++;
-          max_num--;
-          return true;
+       if(arr[index] == null){
+         arr[index] = val;
+         num++;
+         return true;
+       } else {
+          return false;
       }
     }
  }
